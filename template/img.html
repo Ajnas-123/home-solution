@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/img/" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input type="file" name="img">
+		<br>
+		<button>upload</button>
+		
+	</form>
+	{% for x in i %}
+	<img src="{{x.image.url}}" alt="text" height="500px" width="100%">
+	{% endfor %}
+	
+		
+
+</body>
+</html>

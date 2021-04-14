@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3>User details</h3>
+<table class="table-fill">
+<thead>
+<tr>
+<th >Name</th>
+<th >Email</th>
+<th >Phone</th>
+<th >Place</th>
+<th >Address</th>
+</tr>
+</thead>
+<tbody >
+<tr>
+  {% for x in ut %}
+<td >{{x.username}}</td>
+<td >{{x.email}}</td>
+<td >{{x.phone}}</td>
+<td >{{x.place}}</td>
+<td >{{x.address}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table> 
+
+</body>
+</html>

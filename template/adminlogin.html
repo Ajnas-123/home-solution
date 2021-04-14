@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<form action="/admin_login/" method="post" >
+                       {% csrf_token %}
+                        
+                            <input type="text" placeholder="Name" name="username" id="fid" required=""><br><br>
+                            <input type="password" name="password" placeholder="password" id="passid" required="">
+                        </div><br><br>
+                        
+                            <button type="submit" class="btn btn-theme2">Submit Now</button>
+                        </div>
+
+          </body>
+</html>
